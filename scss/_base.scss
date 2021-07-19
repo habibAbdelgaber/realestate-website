@@ -1,0 +1,59 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@200&family=Rubik:wght@300&display=swap');
+
+*, *::after, *::before{
+    margin: 0;
+    padding: 0;
+}
+
+
+html{
+    font-size: 62.5%;
+    box-sizing: inherit;
+}
+
+body{
+    box-sizing: border-box;
+    font-family: 'Nunito', sans-serif;
+    // font-family: 'Rubik', sans-serif;
+}
+
+.container{
+    display: grid;
+    grid-template-rows: 80vh min-content 40vw repeat(3, min-content);
+    // after we have seen the power of css grid and we have practiced all fundamentals
+    // that we can apply to our real projects that we tend to build at any time possible! and the one that we're building now.
+    // We started our project and structured layout, but not finished yet.
+    // to finish structuring our project, here are the steps:
+    // 1- Create 8 columns out of 9, the ninth col should be 8rem for sidebar in the left(first).
+    // 2- You can name the columns or just use implicit columns numbers by default.
+    // 3- header should span 6 cols and realtor 3 cols.
+    // 4- feature should span 8 cols.
+    // 5- story picture should span 4 or 5 cols and story content 4 cols.
+    // 6- home, gallery and footer should span full cols.
+    // 7- Hint! 
+    // a) for 8 cols to be centered, create 2fr units 1 where 8 cols start and 1 where 8 cols ends.
+    // b) cols or col means (column/s). 
+    // c) to make these layouts mobile responsive in some cases use minmax function.
+    // Good luck💪💪💪
+
+
+
+    & > *{
+        padding: 1rem;
+        font-size: 1.5rem;
+        color: #fff;
+    }
+
+}
+
+a{
+    text-decoration: none;
+}
+
+ul li{
+    list-style-type: none;
+}
+
+ol li{
+    list-style-type: none;
+}

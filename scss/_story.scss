@@ -1,9 +1,10 @@
 .story{
-    &__feature{
-
+    &__picture{
         background-color: yellowgreen;
+        grid-column: full-start / 4 col-end;
     }
     &__content{
         background-color: pink;
+        grid-column: 4 col-end / full-end;
     }
 }

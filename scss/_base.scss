@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@200&family=Rubik:wght@300&display=swap');
+
 
 *, *::after, *::before{
     margin: 0;
@@ -13,8 +13,7 @@ html{
 
 body{
     box-sizing: border-box;
-    font-family: 'Nunito', sans-serif;
-    // font-family: 'Rubik', sans-serif;
+    font-family: $primary-font-family;
 }
 
 .container{
@@ -25,6 +24,7 @@ body{
     // We started our project and structured layout, but not finished yet.
     // to finish structuring our project, here are the steps:
     // 1- Create 8 columns out of 9, the ninth col should be 8rem for sidebar in the left(first).
+    grid-template-columns: [sidebar-start] 8rem [sidebar-end full-start] minmax(6rem, 1fr) [center-start] repeat(8, [col-start] minmax(min-content, 14rem) [col-end]) [center-end] minmax(6rem, 1fr) [full-end];
     // 2- You can name the columns or just use implicit columns numbers by default.
     // 3- header should span 6 cols and realtor 3 cols.
     // 4- feature should span 8 cols.
@@ -41,7 +41,7 @@ body{
     & > *{
         padding: 1rem;
         font-size: 1.5rem;
-        color: #fff;
+        color: sandybrown;
     }
 
 }

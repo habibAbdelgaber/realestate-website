@@ -1,3 +1,25 @@
 .features{
-    background-color: red;
+    // background-color: red;
+    grid-column: center-start / center-end;
+    margin: 8rem 0;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(23rem, 1fr));
+    gap: 3rem;
+}
+
+.feature{
+    display: grid;
+    grid-template-columns: min-content 1fr;
+    row-gap: .5rem;
+    grid-auto-flow: column;
+    grid-auto-flow: row;
+    column-gap: .5rem;
+    align-items: start;
+    &--icon{
+        grid-row: 1 / span 2;
+        transform: translateY(-1rem);
+    }
+    &--description{
+        align-items: start;
+    }
 }

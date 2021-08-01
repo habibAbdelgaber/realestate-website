@@ -2,6 +2,7 @@
     // background-color: red;
     grid-column: center-start / center-end;
     margin: 8rem 0;
+    
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(23rem, 1fr));
     gap: 3rem;
@@ -15,11 +16,14 @@
     grid-auto-flow: row;
     column-gap: .5rem;
     align-items: start;
+    
     &--icon{
         grid-row: 1 / span 2;
-        transform: translateY(-1rem);
+        transform: translateY(-.6rem);
     }
     &--description{
         align-items: start;
+        font-size: 1.3rem;
+        line-height: 1.6;
     }
 }

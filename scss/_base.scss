@@ -14,6 +14,7 @@ html{
 body{
     box-sizing: border-box;
     font-family: $primary-font-family;
+    line-height: 1.7;
 }
 
 .container{
@@ -38,11 +39,11 @@ body{
 
 
 
-    & > *{
-        padding: 1rem;
-        font-size: 1.5rem;
-        color: sandybrown;
-    }
+    // & > *{
+    //     padding: 1rem;
+    //     font-size: 1.5rem;
+    //     color: sandybrown;
+    // }
 
 }
 

@@ -11,9 +11,15 @@
 }
 .heading-3{
     @extend %heading;
+    font-weight: 500;
+    font-size: 1.6rem;
+    text-transform: capitalize
 }
 .heading-4{
     @extend %heading;
+    font-size: 1.6rem;
+    text-transform: capitalize;
+    // letter-spacing: .1rem;
     &--light{
         color: $color-white;
     }
@@ -27,3 +33,80 @@
 .heading-6{
     @extend %heading;
 }
+// Button Components
+.btn{
+    background-color: $color-black;
+    border: 0;
+    border-radius: 0;
+    color: $color-white;
+    cursor: pointer;
+    transition: all .5s ease-in;
+    text-transform: capitalize;
+    font-size: 1.5rem;
+    &:hover{
+        background-color: rgba($color-black, .7);
+    }
+}
+// Margin Components
+.m{
+    margin: 1rem;
+}
+.mx{margin: 0 auto;}
+.my{margin: auto 0;}
+.m-top-bottom{margin: .5rem 0;}
+
+.mb-sm{margin-bottom: 1rem;}
+.mt-sm{margin-top: 1rem;}
+.ml-sm{margin-left: 1rem;}
+.mr-sm{margin-right: 1rem;}
+
+.mb-md{margin-bottom: 2rem;}
+.mt-md{margin-top: 2rem;}
+.ml-md{margin-left: 2rem;}
+.mr-md{margin-right: 2rem;}
+
+.mb-lg{margin-bottom: 3rem;}
+.mt-lg{margin-top: 3rem;}
+.ml-lg{margin-left: 3rem;}
+.mr-lg{margin-right: 3rem;}
+
+.mb-xl{margin-bottom: 4rem;}
+.mt-xl{margin-top: 4rem;}
+.ml-xl{margin-left: 4rem;}
+.mr-xl{margin-right: 4rem;}
+
+.mb-xxl{margin-bottom: 5rem;}
+.mt-xxl{margin-top: 5rem;}
+.ml-xxl{margin-left: 5rem;}
+.mr-xxl{margin-right: 5rem;}
+
+// Padding Components
+.pxy{padding: 1rem;}
+
+.px{padding: 0 1rem;}
+.py{padding: 1rem 0;}
+
+.pb-sm{padding-bottom: 1rem;}
+.pt-sm{padding-top: 1rem;}
+.pl-sm{padding-left: 1rem;}
+.pr-sm{padding-right: 1rem;}
+
+.pb-md{padding-bottom: 2rem;}
+.pt-md{padding-top: 2rem;}
+.pl-md{padding-left: 2rem;}
+.pr-md{padding-right: 2rem;}
+
+.pb-lg{padding-bottom: 3rem;}
+.pt-lg{padding-top: 3rem;}
+.pl-lg{padding-left: 3rem;}
+.pr-lg{padding-right: 3rem;}
+
+.pb-xl{padding-bottom: 4rem;}
+.pt-xl{padding-top: 4rem;}
+.pl-xl{padding-left: 4rem;}
+.pr-xl{padding-right: 4rem;}
+
+.pb-xxl{padding-bottom: 5rem;}
+.pt-xxl{padding-top: 5rem;}
+.pl-xxl{padding-left: 5rem;}
+.pr-xxl{padding-right: 5rem;}

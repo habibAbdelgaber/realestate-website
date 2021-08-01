@@ -1,4 +1,40 @@
-.home{
-    background-color: grey;
+.homes{
+    // background-color: grey;
     grid-column: center-start / center-end;
+    margin: 8rem 0;
+
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
+    gap: 2rem;
+}
+
+.home{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    justify-items: center;
+    &--img{
+        width: 100%;
+        grid-column: 1 / -1;
+    }
+    &--name{
+        grid-row: 2 / 2;
+        transform: translateY(-1rem);
+        // grid-column: 2 / -2;
+        // justify-content: center;
+        justify-self: start;
+        align-items: center;
+        justify-content: center;
+        padding: .5rem;
+    }
+
+    &__location,
+    &__area,
+    &__rooms,
+    &__price{
+        
+
+    }
+    &--cta{
+        grid-column: 1 / -1 span;
+    }
 }

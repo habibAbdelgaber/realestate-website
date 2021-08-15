@@ -1,4 +1,40 @@
 .footer{
     background-color: #000;
     grid-column: full-start / full-end;
+    padding: 7rem;
+}
+
+.nav{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(8rem, 1fr));
+    &--item{
+        a{
+            font-family: 'Times New Roman', Times, serif;
+            font-size: 2rem;
+            color: $color-white;
+            text-transform: capitalize;
+            display: block;
+            padding: 1rem 2rem;
+            text-align: center;
+            border-radius: 5rem;
+            transition: all .5s ease-in-out;
+            &:hover{
+                background-color: #252525;
+                transform: translateY(-5px);
+               
+            }
+        }
+    }
+}
+
+.copyrights{
+    color: $color-white;
+    font-size: 2rem;
+    text-align: center;
+    font-family: 'Times New Roman', Times, serif;
+    padding: 1rem 0;
+    text-decoration: underline;
+    span{
+        color: crimson;
+    }
 }

@@ -9,32 +9,56 @@
 }
 
 .home{
+    background-color: $primary-color;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     justify-items: center;
+    .wishlist{
+        color: brown;
+        grid-row: 1 / -1;
+        grid-column: 1 / -1;
+        font-size: 2rem;
+        justify-self: right;
+        margin: 1rem;
+        z-index: 10;
+    }
     &--img{
         width: 100%;
+        grid-row: 1 / 1;
         grid-column: 1 / -1;
     }
     &--name{
-        grid-row: 2 / 2;
-        transform: translateY(-1rem);
-        // grid-column: 2 / -2;
-        // justify-content: center;
-        justify-self: start;
-        align-items: center;
-        justify-content: center;
+        grid-column: 1 / -1; 
         padding: .5rem;
+        width: 80%;
+        text-align: center;
+        transform: translateY(-50%);
+        z-index: 10;
+    }
+
+    &__price{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        align-self: start;
+        gap: 1.5rem;
+        margin-bottom: 2rem;
+        span{
+            // margin-right: 1rem;
+            // display: block;
+        }
     }
 
     &__location,
     &__area,
     &__rooms,
     &__price{
-        
-
+    font-size: 1.5rem;
     }
     &--cta{
-        grid-column: 1 / -1 span;
+        width: 100%;
+        grid-column: 1 / -1;
+        text-align: center;
+        align-items: center;
+        font-family: $secondary-font-family;
     }
 }

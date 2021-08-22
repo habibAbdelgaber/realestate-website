@@ -14,6 +14,12 @@
     font-weight: 500;
     font-size: 1.6rem;
     text-transform: capitalize
+    &--light{
+        color: $color-white;
+    }
+    &--dark{
+        color: $color-black;
+    }
 }
 .heading-4{
     @extend %heading;
@@ -44,7 +50,7 @@
     text-transform: capitalize;
     font-size: 1.5rem;
     &:hover{
-        background-color: rgba($color-black, .9);
+        background-color: rgba($color-black, .8);
     }
 }
 // Margin Components

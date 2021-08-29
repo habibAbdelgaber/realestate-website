@@ -19,7 +19,7 @@ body{
 
 .container{
     display: grid;
-    grid-template-rows: 80vh min-content 40vw repeat(3, min-content);
+    grid-template-rows: min-content min-content 40vw repeat(3, min-content);
     // after we have seen the power of css grid and we have practiced all fundamentals
     // that we can apply to our real projects that we tend to build at any time possible! and the one that we're building now.
     // We started our project and structured layout, but not finished yet.
@@ -37,7 +37,17 @@ body{
     // c) to make these layouts mobile responsive in some cases use minmax function.
     // Good luck💪💪💪
 
+    @media only screen and (max-width: $desktop-bp-large){
+        grid-template-rows: 6rem minmax(100vh, max-content) min-content 40vw repeat(3, min-content);
+        grid-template-columns:  [full-start] minmax(6rem, 1fr) [center-start] repeat(8, [col-start] minmax(min-content, 14rem) [col-end]) [center-end] minmax(6rem, 1fr) [full-end];
 
+    }
+
+    @media only screen and (max-width: $desktop-bp-medium){
+        grid-template-rows: 6rem minmax(100vh, max-content);
+        grid-template-columns:  [full-start] minmax(6rem, 1fr) [center-start] repeat(8, [col-start] minmax(min-content, 14rem) [col-end]) [center-end] minmax(6rem, 1fr) [full-end];
+
+    }
 
     // & > *{
     //     padding: 1rem;
